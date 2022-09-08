@@ -3,8 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: userjava
-  name: userjava
+    app: userprofile
+  name: userprofile
+  namespace: api
 spec:
   type: ClusterIP
   ports:
@@ -12,4 +13,4 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: userjava
+    app: userprofile
